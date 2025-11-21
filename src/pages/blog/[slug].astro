@@ -1,0 +1,170 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export const getStaticPaths = (async () => {
+  const blogPosts = await getCollection('blog', ({ data }) => !data.draft);
+  
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  article={true}
+  publishDate={post.data.publishDate}
+>
+  <main class="container">
+    <article class="blog-post">
+      <header>
+        <time datetime={post.data.publishDate.toISOString()}>
+          {post.data.publishDate.toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+          })}
+        </time>
+        <h1>{post.data.title}</h1>
+        <p class="description">{post.data.description}</p>
+        {post.data.tags.length > 0 && (
+          <div class="tags">
+            {post.data.tags.map(tag => (
+              <a href={`/blog/tag/${tag}`} class="tag">{tag}</a>
+            ))}
+          </div>
+        )}
+      </header>
+      
+      <div class="content">
+        <Content />
+      </div>
+      
+      <footer>
+        <a href="/blog" class="back-link">← Back to Blog</a>
+      </footer>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .blog-post header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  time {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+  }
+
+  .tag:hover {
+    background: var(--color-border);
+    text-decoration: none;
+  }
+
+  .content {
+    margin-bottom: 3rem;
+  }
+
+  .content :global(h2) {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+
+  .content :global(h3) {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.375rem;
+  }
+
+  .content :global(p) {
+    margin-bottom: 1rem;
+  }
+
+  .content :global(ul),
+  .content :global(ol) {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .content :global(a) {
+    color: var(--color-accent);
+  }
+
+  .content :global(a:hover) {
+    color: var(--color-accent-hover);
+  }
+
+  footer {
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .back-link {
+    color: var(--color-text-muted);
+  }
+
+  .back-link:hover {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .description {
+      font-size: 1.1rem;
+    }
+  }
+</style>

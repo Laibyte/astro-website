@@ -2,9 +2,9 @@ export const SITE = {
   website: "https://alfredji.com/", // replace this with your deployed domain
   author: "Ali Alfredji",
   profile: "https://alfredji.com/",
-  desc: "Personal website of Ali Alfredji",
+  desc: "Hi, I'm Ali Alfredji, Senior Software Engineer with 10+ years of experience building better software. Writing on AI‑powered dev, software engineering, and productivity.",
   title: "Alfredji",
-  ogImage: "alfredji-og.jpg",
+  // ogImage: "alfredji-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/laibyte/astro-website/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"

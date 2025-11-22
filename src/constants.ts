@@ -6,6 +6,7 @@ import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconShare from "@/assets/icons/IconShare.svg";
 import { SITE } from "@/config";
 
 interface Social {
@@ -13,6 +14,7 @@ interface Social {
   href: string;
   linkTitle: string;
   icon: (_props: Props) => Element;
+  isNativeShare?: boolean;
 }
 
 export const SOCIALS: Social[] = [
@@ -44,6 +46,13 @@ export const SOCIALS: Social[] = [
 
 export const SHARE_LINKS: Social[] = [
   {
+    name: "Share",
+    href: "#native-share",
+    linkTitle: `Share this post`,
+    icon: IconShare,
+    isNativeShare: true,
+  },
+  {
     name: "WhatsApp",
     href: "https://wa.me/?text=",
     linkTitle: `Share this post via WhatsApp`,
@@ -54,6 +63,12 @@ export const SHARE_LINKS: Social[] = [
     href: "https://www.facebook.com/sharer.php?u=",
     linkTitle: `Share this post on Facebook`,
     icon: IconFacebook,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/sharing/share-offsite/?url=",
+    linkTitle: `Share this post on LinkedIn`,
+    icon: IconLinkedin,
   },
   {
     name: "X",

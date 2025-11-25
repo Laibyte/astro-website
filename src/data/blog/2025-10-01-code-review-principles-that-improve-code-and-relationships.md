@@ -33,4 +33,3 @@ Here are some examples:
 "This doesn't follow standards" → "To maintain consistency, we could follow the naming convention from the API module. Here is the link to the docs"
 
 The goal isn't perfect code. It's better code and better relationships through effective communication.
-

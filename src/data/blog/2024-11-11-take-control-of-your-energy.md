@@ -16,6 +16,7 @@ Do you ever feel like you're constantly running, yet never seem to catch up? Do 
 Energy management isn't just about squeezing more hours into the day; it's about understanding and optimizing your energy levels to work smarter, not harder. It involves strategically aligning your tasks with your natural rhythms, prioritizing effectively, and cultivating habits that support sustained focus and motivation. This guide, inspired by productivity experts and research, provides a comprehensive framework to help you do just that.
 
 ### Prerequisites:
+
 - **A Notebook and Pen:** For tracking your energy levels and planning your tasks
 - **A Large Sheet of Paper or Poster Board:** For visualizing your yearly goal
 - **Sticky Notes:** For brainstorming and breaking down your goal into smaller steps
@@ -52,6 +53,7 @@ Identify what motivates you and create a reward system to incentivize yourself t
 When faced with distractions or competing priorities, ask yourself: "How will I feel about this in 10 minutes? 10 weeks? 10 years?" This helps you maintain perspective, prioritize effectively, and minimize decision fatigue.
 
 ### Step 8: Establish a Motivation Cycle
+
 1. Visualize your annual goal (the poster board)
 2. Set monthly goals and key performance indicators (KPIs) based on the sticky notes
    - Leading indicators (actions)
@@ -64,6 +66,7 @@ When faced with distractions or competing priorities, ask yourself: "How will I 
 While productivity is important, remember to prioritize your well-being, relationships, and values. Work is often the rubber ball that can bounce back, while other aspects of life are more fragile. Maintain a healthy balance and don't sacrifice what truly matters.
 
 ### Troubleshooting Tips:
+
 - **Feeling Overwhelmed:** Revisit your "one thing" and ensure you're not trying to do too much
 - **Struggling with Motivation:** Adjust your reward system or revisit your "why"
 - **Difficulty Tracking Energy Levels:** Experiment with different tracking methods

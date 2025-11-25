@@ -41,4 +41,3 @@ I am better at identifying what to look for.
 I know when to seek guidance and pair with others.
 
 Letting people struggle triggers critical thinking and builds problem solving skills. Not every challenge should be served on a silver platter. We need space to try, fail, and improve.
-

@@ -34,4 +34,3 @@ Learn from others who know things you don't.
 The moment you think you know enough is the moment you stop growing.
 
 Stay curious. Stay relevant.
-

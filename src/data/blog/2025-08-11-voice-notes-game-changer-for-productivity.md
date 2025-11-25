@@ -30,4 +30,3 @@ For getting raw thoughts down quickly, it's a seriously effective tool.
 Of course, you might want to skip it when you're in a crowded elevator haha
 
 But seriously, give it a try 😃
-

@@ -42,4 +42,3 @@ The moment you see the AI going down the wrong path, jump in and get it back on 
 If you find these tips helpful, you should check out the full guide. It's seriously worth the read. Here's the link: https://coding-with-ai.dev
 
 Feel free to repost and share this so other engineers can benefit too.
-

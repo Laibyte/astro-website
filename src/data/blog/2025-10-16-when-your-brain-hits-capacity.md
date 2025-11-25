@@ -46,4 +46,3 @@ Which happens multiple times a day. To everyone.
 Whether you're coding, managing a team, designing systems, or running a business - your brain follows the same rules.
 
 The best work I've done came after I stopped trying to brute-force through mental fatigue.
-

@@ -4,7 +4,7 @@ export const SITE = {
   profile: "https://alfredji.com/",
   desc: "Hi, I'm Ali Alfredji, Senior Software Engineer with 10+ years of experience building better software. Writing on AI‑powered dev, software engineering, and productivity.",
   title: "Alfredji",
-  // ogImage: "alfredji-og.jpg",
+  ogImage: "og.png",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,

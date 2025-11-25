@@ -23,4 +23,3 @@ For new ideas, we let it run wild. An AI assistant is perfect for prototyping.
 But in our core codebase, it must follow the rules.
 
 This has forced us to be better at documenting. Style guides, ways of working, and architectural rules are no longer just for humans. They are the playbook we hand to our AI.
-

@@ -7,6 +7,7 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
 import IconShare from "@/assets/icons/IconShare.svg";
+import IconSubstack from "@/assets/icons/IconSubstack.svg";
 import { SITE } from "@/config";
 
 interface Social {
@@ -35,6 +36,12 @@ export const SOCIALS: Social[] = [
     href: "https://www.linkedin.com/in/alialfredji/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
+  },
+  {
+    name: "Substack",
+    href: "https://substack.com/@alialfredji",
+    linkTitle: `${SITE.title} on Substack`,
+    icon: IconSubstack,
   },
   {
     name: "Mail",
